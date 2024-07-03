@@ -48,7 +48,7 @@ jobs:
       - name: Build and push Docker image
         uses: cloudposse/github-action-docker-build-push@main
         with:
-         
+          image : singhritik955/myrepo
           registry: registry.hub.docker.com
           login: "${{ secrets.DOCKERHUB_USERNAME }}"
           password: "${{ secrets.DOCKERHUB_PASSWORD }}"

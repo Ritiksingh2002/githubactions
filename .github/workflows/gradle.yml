@@ -45,13 +45,4 @@ jobs:
       - name: Generate and submit dependency graph
         uses: gradle/actions/dependency-submission@417ae3ccd767c252f5661f1ace9f835f9654f2b5 # v3.1.0
 
-      - name: Build and push Docker image
-        id : Build and push
-        uses: cloudposse/github-action-docker-build-push@main
-        with:
-          # image : singhritik955/myrepo
-          registry: registry.hub.docker.com
-          login: "${{ secrets.DOCKERHUB_USERNAME }}"
-          password: "${{ secrets.DOCKERHUB_PASSWORD }}"
-          # platforms: linux/amd64,linux/arm64
-
+     

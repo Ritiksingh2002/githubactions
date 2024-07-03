@@ -1,4 +1,14 @@
-  runs-on: ubuntu-latest
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
